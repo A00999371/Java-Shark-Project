@@ -1,0 +1,2124 @@
+######File output##########
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = ff:ff:ff:ff:ff:ff
+Eth:                    .... ..0. .... .... = [2] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [2] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 42
+Ip:               id = 0x2D96 (11670)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 1 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x7AB3 (31411) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 255.255.255.255
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 52017
+Udp:      destination = 3289
+Udp:           length = 22
+Udp:         checksum = 0x2E4E (11854) [correct]
+Udp: 
+frame #1
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 51
+Ip:               id = 0x788A (30858)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x497B (18811) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 74.125.28.189
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 51583
+Udp:      destination = 443
+Udp:           length = 31
+Udp:         checksum = 0xA8D4 (43220) [correct]
+Udp: 
+frame #2
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 59
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 43 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0xD6FD (55037) [correct]
+Ip:           source = 74.125.28.189
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 51583
+Udp:           length = 39
+Udp:         checksum = 0x4B81 (19329) [correct]
+Udp: 
+frame #3
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 69
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 43 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0xD6F3 (55027) [correct]
+Ip:           source = 74.125.28.189
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 51583
+Udp:           length = 49
+Udp:         checksum = 0x6BD4 (27604) [correct]
+Udp: 
+frame #4
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 67
+Ip:               id = 0x788B (30859)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x496A (18794) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 74.125.28.189
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 51583
+Udp:      destination = 443
+Udp:           length = 47
+Udp:         checksum = 0x466B (18027) [correct]
+Udp: 
+frame #5
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 65
+Ip:               id = 0x433F (17215)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0xA4B (2635) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 142.232.76.191
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 64825
+Udp:      destination = 53
+Udp:           length = 45
+Udp:         checksum = 0xF65 (3941) [correct]
+Udp: 
+frame #6
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 105
+Ip:               id = 0x3D11 (15633)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 58 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x5651 (22097) [correct]
+Ip:           source = 142.232.76.191
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 53
+Udp:      destination = 64825
+Udp:           length = 85
+Udp:         checksum = 0xBE50 (48720) [correct]
+Udp: 
+frame #7
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 1378
+Ip:               id = 0x1AFF (6911)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x5848 (22600) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 216.58.216.142
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 64826
+Udp:      destination = 443
+Udp:           length = 1358
+Udp:         checksum = 0xC818 (51224) [correct]
+Udp: 
+frame #8
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 1378
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 52 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x7F47 (32583) [correct]
+Ip:           source = 216.58.216.142
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 64826
+Udp:           length = 1358
+Udp:         checksum = 0xF13C (61756) [correct]
+Udp: 
+frame #9
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 1378
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 52 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x7F47 (32583) [correct]
+Ip:           source = 216.58.216.142
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 64826
+Udp:           length = 1358
+Udp:         checksum = 0x4E7 (1255) [correct]
+Udp: 
+frame #10
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 1378
+Ip:               id = 0x1B00 (6912)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x5847 (22599) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 216.58.216.142
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 64826
+Udp:      destination = 443
+Udp:           length = 1358
+Udp:         checksum = 0x129F (4767) [correct]
+Udp: 
+frame #11
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 1378
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 52 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x7F47 (32583) [correct]
+Ip:           source = 216.58.216.142
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 64826
+Udp:           length = 1358
+Udp:         checksum = 0x83D8 (33752) [correct]
+Udp: 
+frame #12
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 263
+Ip:               id = 0x1B01 (6913)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x5CA1 (23713) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 216.58.216.142
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 64826
+Udp:      destination = 443
+Udp:           length = 243
+Udp:         checksum = 0xF376 (62326) [correct]
+Udp: 
+frame #13
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 65
+Ip:               id = 0x1B02 (6914)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x5D66 (23910) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 216.58.216.142
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 64826
+Udp:      destination = 443
+Udp:           length = 45
+Udp:         checksum = 0xB536 (46390) [correct]
+Udp: 
+frame #14
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 58
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 52 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x846F (33903) [correct]
+Ip:           source = 216.58.216.142
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 64826
+Udp:           length = 38
+Udp:         checksum = 0x111B (4379) [correct]
+Udp: 
+frame #15
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 332
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 52 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x835D (33629) [correct]
+Ip:           source = 216.58.216.142
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 64826
+Udp:           length = 312
+Udp:         checksum = 0x61FE (25086) [correct]
+Udp: 
+frame #16
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 66
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 52 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x8467 (33895) [correct]
+Ip:           source = 216.58.216.142
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 64826
+Udp:           length = 46
+Udp:         checksum = 0x5A46 (23110) [correct]
+Udp: 
+frame #17
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 56
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 52 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x8471 (33905) [correct]
+Ip:           source = 216.58.216.142
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 64826
+Udp:           length = 36
+Udp:         checksum = 0xCCB7 (52407) [correct]
+Udp: 
+frame #18
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 69
+Ip:               id = 0x1B03 (6915)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x5D61 (23905) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 216.58.216.142
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 64826
+Udp:      destination = 443
+Udp:           length = 49
+Udp:         checksum = 0x1090 (4240) [correct]
+Udp: 
+frame #19
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 66
+Ip:               id = 0x1B04 (6916)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x5D63 (23907) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 216.58.216.142
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 64826
+Udp:      destination = 443
+Udp:           length = 46
+Udp:         checksum = 0xD317 (54039) [correct]
+Udp: 
+frame #20
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = ff:ff:ff:ff:ff:ff
+Eth:                    .... ..0. .... .... = [2] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [2] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 42
+Ip:               id = 0x2D97 (11671)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 1 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x7AB2 (31410) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 255.255.255.255
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 52017
+Udp:      destination = 3289
+Udp:           length = 22
+Udp:         checksum = 0x2E4E (11854) [correct]
+Udp: 
+frame #21
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 89
+Ip:               id = 0x325D (12893)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0xE0B4 (57524) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 157.56.120.207
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 50108
+Udp:      destination = 3544
+Udp:           length = 69
+Udp:         checksum = 0xD467 (54375) [correct]
+Udp: 
+frame #22
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 137
+Ip:               id = 0x7774 (30580)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 44 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0xEF6D (61293) [correct]
+Ip:           source = 157.56.120.207
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 3544
+Udp:      destination = 50108
+Udp:           length = 117
+Udp:         checksum = 0xBDD (3037) [correct]
+Udp: 
+frame #23
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 69
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 43 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0xD6F3 (55027) [correct]
+Ip:           source = 74.125.28.189
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 51583
+Udp:           length = 49
+Udp:         checksum = 0x7D7D (32125) [correct]
+Udp: 
+frame #24
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 64
+Ip:               id = 0x788C (30860)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x496C (18796) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 74.125.28.189
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 51583
+Udp:      destination = 443
+Udp:           length = 44
+Udp:         checksum = 0xA740 (42816) [correct]
+Udp: 
+frame #25
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = ff:ff:ff:ff:ff:ff
+Eth:                    .... ..0. .... .... = [2] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [2] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 42
+Ip:               id = 0x2D98 (11672)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 1 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x7AB1 (31409) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 255.255.255.255
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 52017
+Udp:      destination = 3289
+Udp:           length = 22
+Udp:         checksum = 0x2E4E (11854) [correct]
+Udp: 
+frame #26
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 01:00:5e:00:00:01
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth:              FCS = 0x0 (0) [incorrect: 0xAF33AC6A]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=24 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 6 [6 * 4 = 24 bytes, Ip Options Present]
+Ip:         diffserv = 0xC0 (192)
+Ip:                    1100 00.. = [48] code point: code point 48
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 32
+Ip:               id = 0x6C09 (27657)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 1 [time to live]
+Ip:             type = 2 [next: Internet Group Management]
+Ip:         checksum = 0xC126 (49446) [correct]
+Ip:           source = 142.232.135.254
+Ip:      destination = 224.0.0.1
+Ip: 
+Ip: + RouterAlert: offset=20 length=4
+Ip:             code = 148
+Ip:                    1... .... = [1] copy: copy to all fragments
+Ip:                    .00. .... = [0] class: CONTROL
+Ip:                    ...1 0100 = [20] type: ROUTER_ALERT
+Ip:           length = 4
+Ip:           action = 0 [EXAMINE_PACKET]
+Ip: 
+frame #27
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x806 (2054)
+Eth: 
+arp header::
+Arp:  ******* Arp offset=14 (0xE) length=28 
+Arp: 
+Arp:     hardwareType = 1 [ETHERNET]
+Arp:     protocolType = 0x800 (2048) [IP]
+Arp:    hardware size = 6 bytes
+Arp:    protocol size = 4 bytes
+Arp:          op code = 1 [REQUEST]
+Arp:       sender MAC = 48:45:20:a6:fb:bc
+Arp:        sender IP = 142.232.130.146
+Arp:       target MAC = 10:0e:7e:98:ac:78
+Arp:        target IP = 142.232.131.254
+Arp: 
+frame #28
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x806 (2054)
+Eth: 
+arp header::
+Arp:  ******* Arp offset=14 (0xE) length=28 
+Arp: 
+Arp:     hardwareType = 1 [ETHERNET]
+Arp:     protocolType = 0x800 (2048) [IP]
+Arp:    hardware size = 6 bytes
+Arp:    protocol size = 4 bytes
+Arp:          op code = 2 [REPLY]
+Arp:       sender MAC = 10:0e:7e:98:ac:78
+Arp:        sender IP = 142.232.131.254
+Arp:       target MAC = 48:45:20:a6:fb:bc
+Arp:        target IP = 142.232.130.146
+Arp: 
+frame #29
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 127
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 43 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0xD6B9 (54969) [correct]
+Ip:           source = 74.125.28.189
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 51583
+Udp:           length = 107
+Udp:         checksum = 0x578E (22414) [correct]
+Udp: 
+frame #30
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 64
+Ip:               id = 0x788D (30861)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x496B (18795) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 74.125.28.189
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 51583
+Udp:      destination = 443
+Udp:           length = 44
+Udp:         checksum = 0x7606 (30214) [correct]
+Udp: 
+frame #31
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 325
+Ip:               id = 0x788E (30862)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x4865 (18533) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 74.125.28.189
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 51583
+Udp:      destination = 443
+Udp:           length = 305
+Udp:         checksum = 0x3C31 (15409) [correct]
+Udp: 
+frame #32
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 248
+Ip:               id = 0x788F (30863)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x48B1 (18609) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 74.125.28.189
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 51583
+Udp:      destination = 443
+Udp:           length = 228
+Udp:         checksum = 0x59EA (23018) [correct]
+Udp: 
+frame #33
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 62
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 43 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0xD6FA (55034) [correct]
+Ip:           source = 74.125.28.189
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 51583
+Udp:           length = 42
+Udp:         checksum = 0xB60A (46602) [correct]
+Udp: 
+frame #34
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 89
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 43 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0xD6DF (55007) [correct]
+Ip:           source = 74.125.28.189
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 51583
+Udp:           length = 69
+Udp:         checksum = 0x23CC (9164) [correct]
+Udp: 
+frame #35
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 74
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 43 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0xD6EE (55022) [correct]
+Ip:           source = 74.125.28.189
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 51583
+Udp:           length = 54
+Udp:         checksum = 0xBC8C (48268) [correct]
+Udp: 
+frame #36
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 70
+Ip:               id = 0x7890 (30864)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x4962 (18786) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 74.125.28.189
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 51583
+Udp:      destination = 443
+Udp:           length = 50
+Udp:         checksum = 0xDCBB (56507) [correct]
+Udp: 
+frame #37
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 57
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 43 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0xD6FF (55039) [correct]
+Ip:           source = 74.125.28.189
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 51583
+Udp:           length = 37
+Udp:         checksum = 0x2732 (10034) [correct]
+Udp: 
+frame #38
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 64
+Ip:               id = 0x7891 (30865)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x4967 (18791) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 74.125.28.189
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 51583
+Udp:      destination = 443
+Udp:           length = 44
+Udp:         checksum = 0x34B9 (13497) [correct]
+Udp: 
+frame #39
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 01:00:5e:00:00:01
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth:              FCS = 0x0 (0) [incorrect: 0xEF94C7DA]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=24 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 6 [6 * 4 = 24 bytes, Ip Options Present]
+Ip:         diffserv = 0xC0 (192)
+Ip:                    1100 00.. = [48] code point: code point 48
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 32
+Ip:               id = 0x7AEA (31466)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 1 [time to live]
+Ip:             type = 2 [next: Internet Group Management]
+Ip:         checksum = 0xB645 (46661) [correct]
+Ip:           source = 142.232.131.254
+Ip:      destination = 224.0.0.1
+Ip: 
+Ip: + RouterAlert: offset=20 length=4
+Ip:             code = 148
+Ip:                    1... .... = [1] copy: copy to all fragments
+Ip:                    .00. .... = [0] class: CONTROL
+Ip:                    ...1 0100 = [20] type: ROUTER_ALERT
+Ip:           length = 4
+Ip:           action = 0 [EXAMINE_PACKET]
+Ip: 
+frame #40
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 51
+Ip:               id = 0x1B05 (6917)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x5D71 (23921) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 216.58.216.142
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 64826
+Udp:      destination = 443
+Udp:           length = 31
+Udp:         checksum = 0x40C8 (16584) [correct]
+Udp: 
+frame #41
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 61
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 52 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x846C (33900) [correct]
+Ip:           source = 216.58.216.142
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 64826
+Udp:           length = 41
+Udp:         checksum = 0x1DAA (7594) [correct]
+Udp: 
+frame #42
+tcp.dst_port=443
+tcp.src_port=52568
+tcp.ack=31599496
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 93
+Ip:               id = 0x8DD (2269)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 6 [next: Transmission Control]
+Ip:         checksum = 0x3947 (14663) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 131.253.34.255
+Ip: 
+tcp header::
+Tcp:  ******* Tcp offset=34 (0x22) length=20 
+Tcp: 
+Tcp:           source = 52568
+Tcp:      destination = 443
+Tcp:              seq = 0x78EACA90 (2028653200)
+Tcp:              ack = 0x31599496 (827954326)
+Tcp:             hlen = 5
+Tcp:         reserved = 0
+Tcp:            flags = 0x18 (24)
+Tcp:                    0... .... = [0] cwr: reduced (cwr)
+Tcp:                    .0.. .... = [0] ece: ECN echo flag
+Tcp:                    ..0. .... = [0] ack: urgent, out-of-band data
+Tcp:                    ...1 .... = [1] ack: acknowledgment
+Tcp:                    .... 1... = [1] ack: push current segment of data
+Tcp:                    .... .0.. = [0] ack: reset connection
+Tcp:                    .... ..0. = [0] ack: synchronize connection, startup
+Tcp:                    .... ...0 = [0] fin: closing down connection
+Tcp:           window = 259
+Tcp:         checksum = 0x832C (33580) [correct]
+Tcp:           urgent = 0
+Tcp: 
+frame #43
+tcp.dst_port=52568
+tcp.src_port=443
+tcp.ack=78eacac5
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 178
+Ip:               id = 0x3B8E (15246)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 108 [time to live]
+Ip:             type = 6 [next: Transmission Control]
+Ip:         checksum = 0x1A41 (6721) [correct]
+Ip:           source = 131.253.34.255
+Ip:      destination = 142.232.130.146
+Ip: 
+tcp header::
+Tcp:  ******* Tcp offset=34 (0x22) length=20 
+Tcp: 
+Tcp:           source = 443
+Tcp:      destination = 52568
+Tcp:              seq = 0x31599496 (827954326)
+Tcp:              ack = 0x78EACAC5 (2028653253)
+Tcp:             hlen = 5
+Tcp:         reserved = 0
+Tcp:            flags = 0x18 (24)
+Tcp:                    0... .... = [0] cwr: reduced (cwr)
+Tcp:                    .0.. .... = [0] ece: ECN echo flag
+Tcp:                    ..0. .... = [0] ack: urgent, out-of-band data
+Tcp:                    ...1 .... = [1] ack: acknowledgment
+Tcp:                    .... 1... = [1] ack: push current segment of data
+Tcp:                    .... .0.. = [0] ack: reset connection
+Tcp:                    .... ..0. = [0] ack: synchronize connection, startup
+Tcp:                    .... ...0 = [0] fin: closing down connection
+Tcp:           window = 8033
+Tcp:         checksum = 0x805B (32859) [correct]
+Tcp:           urgent = 0
+Tcp: 
+frame #44
+tcp.dst_port=443
+tcp.src_port=52568
+tcp.ack=31599520
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 40
+Ip:               id = 0x8DE (2270)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 6 [next: Transmission Control]
+Ip:         checksum = 0x397B (14715) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 131.253.34.255
+Ip: 
+tcp header::
+Tcp:  ******* Tcp offset=34 (0x22) length=20 
+Tcp: 
+Tcp:           source = 52568
+Tcp:      destination = 443
+Tcp:              seq = 0x78EACAC5 (2028653253)
+Tcp:              ack = 0x31599520 (827954464)
+Tcp:             hlen = 5
+Tcp:         reserved = 0
+Tcp:            flags = 0x10 (16)
+Tcp:                    0... .... = [0] cwr: reduced (cwr)
+Tcp:                    .0.. .... = [0] ece: ECN echo flag
+Tcp:                    ..0. .... = [0] ack: urgent, out-of-band data
+Tcp:                    ...1 .... = [1] ack: acknowledgment
+Tcp:                    .... 0... = [0] ack: push current segment of data
+Tcp:                    .... .0.. = [0] ack: reset connection
+Tcp:                    .... ..0. = [0] ack: synchronize connection, startup
+Tcp:                    .... ...0 = [0] fin: closing down connection
+Tcp:           window = 259
+Tcp:         checksum = 0x1D1D (7453) [correct]
+Tcp:           urgent = 0
+Tcp: 
+frame #45
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 86
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 43 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0xD6E2 (55010) [correct]
+Ip:           source = 74.125.28.189
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 51583
+Udp:           length = 66
+Udp:         checksum = 0x96E6 (38630) [correct]
+Udp: 
+frame #46
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 47
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 43 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0xD709 (55049) [correct]
+Ip:           source = 74.125.28.189
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 51583
+Udp:           length = 27
+Udp:         checksum = 0xA057 (41047) [correct]
+Udp: 
+frame #47
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 67
+Ip:               id = 0x7892 (30866)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x4963 (18787) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 74.125.28.189
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 51583
+Udp:      destination = 443
+Udp:           length = 47
+Udp:         checksum = 0x21FF (8703) [correct]
+Udp: 
+frame #48
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:           source = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [0] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 347
+Ip:               id = 0x7893 (30867)
+Ip:            flags = 0x0 (0)
+Ip:                    0.. = [0] reserved
+Ip:                    .0. = [0] DF: do not fragment: not set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 128 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0x484A (18506) [correct]
+Ip:           source = 142.232.130.146
+Ip:      destination = 74.125.28.189
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 51583
+Udp:      destination = 443
+Udp:           length = 327
+Udp:         checksum = 0xD09A (53402) [correct]
+Udp: 
+frame #49
+ethernet header::
+Eth:  ******* Ethernet - "Ethernet" - offset=0 (0x0) length=14 
+Eth: 
+Eth:      destination = 48:45:20:a6:fb:bc
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:           source = 10:0e:7e:98:ac:78
+Eth:                    .... ..0. .... .... = [0] LG bit
+Eth:                    .... ...0 .... .... = [2] IG bit
+Eth:             type = 0x800 (2048) [ip version 4]
+Eth: 
+ip4 header::
+Ip:  ******* Ip4 - "ip version 4" - offset=14 (0xE) length=20 protocol suite=NETWORK
+Ip: 
+Ip:          version = 4
+Ip:             hlen = 5 [5 * 4 = 20 bytes, No Ip Options]
+Ip:         diffserv = 0x0 (0)
+Ip:                    0000 00.. = [0] code point: not set
+Ip:                    .... ..0. = [0] ECN bit: not set
+Ip:                    .... ...0 = [0] ECE bit: not set
+Ip:           length = 59
+Ip:               id = 0x0 (0)
+Ip:            flags = 0x2 (2)
+Ip:                    0.. = [0] reserved
+Ip:                    .1. = [1] DF: do not fragment: set
+Ip:                    ..0 = [0] MF: more fragments: not set
+Ip:           offset = 0
+Ip:              ttl = 43 [time to live]
+Ip:             type = 17 [next: User Datagram]
+Ip:         checksum = 0xD6FD (55037) [correct]
+Ip:           source = 74.125.28.189
+Ip:      destination = 142.232.130.146
+Ip: 
+udp header::
+Udp:  ******* Udp offset=34 (0x22) length=8 
+Udp: 
+Udp:           source = 443
+Udp:      destination = 51583
+Udp:           length = 39
+Udp:         checksum = 0x7B31 (31537) [correct]
+Udp: 
+frame #50
+6, 
+superFlowMap::total packet count=0
+total flow count=0
+

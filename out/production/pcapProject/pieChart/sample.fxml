@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: rgb(200,200,200);" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pieChart.Controller">
+    <children>
+        <MenuBar layoutX="14.0" layoutY="14.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openFile" text="Open File" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+      <PieChart fx:id="pieChart2" layoutX="732.0" layoutY="212.0" prefHeight="322.0" prefWidth="355.0" />
+      <PieChart fx:id="pieChart" layoutX="275.0" layoutY="229.0" prefHeight="322.0" prefWidth="355.0" />
+    </children>
+</AnchorPane>
